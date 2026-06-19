@@ -1,0 +1,187 @@
+.html {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+}
+.tabulka {
+  background: linear-gradient(to right,
+    #699fbe 0%,
+    #699fbe 35%,
+    #e26566 65%,
+    #e26566 100%
+  );
+  border-style: solid;
+  width: 100%;
+  border-width: 5px;
+  border-color: #eca455;
+}
+
+.obrazky {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  vertical-align: top;
+  padding: 0;
+}
+
+
+.levá {
+  width: 10%;
+  background: linear-gradient(to bottom, #699fbe 100%, #000000 0%);
+}
+
+.pravá {
+  width: 10%;
+  background: linear-gradient(to bottom, #e26566 100%, #000000 0%);
+}
+
+.prostred {
+  width: 80%;
+  text-align: center;
+}
+
+article {
+  dispay: bloxk;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.sloupec {
+   width: 20%;
+   color: #eca455;
+}
+
+.obrazek,
+.obrazek2 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.odkaz {
+  font-family: Arial, Helvetica, sans-serif
+  color: #eca455;
+  font-size: 20px;
+  text-decoration: none;
+  text-underline-position: ;
+}
+
+.nadpis {
+  font-family: "walter turncoat", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+
+.text {
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #EB1F1B;
+  font-size: 25px;
+  text-align: left;
+}
+
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.images-row-top img,
+
+.images-row-bottom img {
+  display: inline-block;
+  max-width: 200px;
+  height: auto;
+}
+.mobil {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tabulka {
+    display: flex;
+    flex-direction:column;
+    align-items: stretch;
+  }
+  .sloupec {
+    width: 20%;
+    text-align: center;
+    flex: 1;
+    padding: 10px 0;
+  }
+  .odkaz {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 0;
+  }
+  .levá, .pravá {
+    display: none;
+  }
+  .text {
+    font-size: 20px;
+    text-align:center
+  }
+  .nadpis {
+    font-size: 30px;
+    text-align: left;
+  }
+  .prostred {
+    width: 100%;
+    padding: 0;
+  }
+  .obrazky {
+    display:block;
+  }
+  .mobil {
+  display: block;
+  text-align: center;
+  width: 100%;
+  }
+  .mobil > div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+  }
+  .mobil img{
+    max-width: 25%;
+    height: auto;
+  }
+
+  }
